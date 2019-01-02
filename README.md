@@ -1,35 +1,18 @@
 # DDRobot
 钉钉自定义机器人消息推送
 
-#region 1、发送Text消息
-OapiRobot.OapiRobotText("啦啦啦测试", new List<string> { "180********" }, false);
-#endregion
+1、发送Text消息
+http://i01.lw.aliimg.com/media/lADPBbCc1ZgiBN3M0M0C6A_744_208.jpg
+http://i01.lw.aliimg.com/media/lADPBbCc1Zgla_vNATzNA5w_924_316.jpg
 
-#region 2、发送MarkDown消息  
-//MarkDown语法学习可参照以下地址：https://www.jianshu.com/p/191d1e21f7ed 
-//图片地址必须写钉钉可以访问的外链地址
-//如果项目未发布，可采用以下教程，将自己的图片上传百度云，借助百度云生成图片下载的外链：https://jingyan.baidu.com/article/f006222806dfdcfbd3f0c880.html
-OapiRobot.OapiRobotMarkDown("杭州天气", "#### 杭州天气  \n > 9度，@1825718XXXX 西北风1级，空气良89，相对温度73%\n\n > ![avatar](https://thumbnail0.baidupcs.com/thumbnail/853bee5dadaa5b3b0224d1f7e9b99146?fid=288451525-250528-1091053987687165&time=1546401600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-tbnUIzx8woNY1nRPMu1lXKAiR1o%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=35712862995877697&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video)\n  > ###### 10点20分发布 [天气](http://www.thinkpage.cn/)", new List<string> { "18086516541" }, false);
-OapiRobot.OapiRobotMarkDown("杭州天气", "#### 杭州天气  \n > 9度，@1825718XXXX 西北风1级，空气良89，相对温度73%\n\n > ![screenshot](http://i01.lw.aliimg.com/media/lALPBbCc1ZhJGIvNAkzNBLA_1200_588.png)\n  > ###### 10点20分发布 [天气](http://www.thinkpage.cn/)", new List<string> { "180********" }, false);
-#endregion;
+2、发送MarkDown消息  
+http://i01.lw.aliimg.com/media/lALPBbCc1ZhOdgrNAmrNBCA_1056_618.png
 
-#region 3、发送整体跳转ActionCard类型
-OapiRobot.OapiRobotActionCardOverall("乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身",
-                                    "![screenshot](@lADOpwk3K80C0M0FoA) \n #### 乔布斯 20 年前想打造的苹果咖啡厅 \n\n Apple Store 的设计正从原来满满的科技感走向生活化，而其生活化的走向其实可以追溯到 20 年前苹果一个建立咖啡馆的计划",
-                                    "阅读全文",
-                                    "https://www.dingtalk.com/",
-                                    "0",
-                                    "0");
-#endregion
+3、发送整体跳转ActionCard类型
+https://img.alicdn.com/tfs/TB1nhWCiBfH8KJjy1XbXXbLdXXa-547-379.png
 
-#region 4、独立跳转ActionCard类型
-OapiRobot.OapiRobotActionCardSingle("乔布斯 20 年前想打造一间苹果咖啡厅，而它正是 Apple Store 的前身",
-                                    "![screenshot](@lADOpwk3K80C0M0FoA) \n\n #### 乔布斯 20 年前想打造的苹果咖啡厅 \n\n Apple Store 的设计正从原来满满的科技感走向生活化，而其生活化的走向其实可以追溯到 20 年前苹果一个建立咖啡馆的计划",
-                                    "[{\"title\": \"内容不错\", \"actionURL\": \"https://www.dingtalk.com/\"}, {\"title\": \"不感兴趣\", \"actionURL\": \"https://www.dingtalk.com/\"}]",
-                                    "0",
-                                    "0");
-#endregion
+4、独立跳转ActionCard类型
+https://img.alicdn.com/top/i1/LB1GgOFQVXXXXXnaXXXXXXXXXXX
 
-#region 5、FeedCard类型
-OapiRobot.OapiRobotFeedCard();
-#endregion
+5、FeedCard类型
+https://img.alicdn.com/top/i1/LB1R2evQVXXXXXDapXXXXXXXXXX
