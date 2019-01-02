@@ -1,0 +1,3 @@
+G:\VisualStudio workspace\DDRobot\OapiRobotTest\bin\Debug\OapiRobotTest.exe.config
+G:\VisualStudio workspace\DDRobot\OapiRobotTest\obj\Debug\OapiRobotTest.exe
+G:\VisualStudio workspace\DDRobot\OapiRobotTest\obj\Debug\OapiRobotTest.pdb
