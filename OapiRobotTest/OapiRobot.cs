@@ -68,6 +68,26 @@ namespace OapiRobotTest
             string json = Request(RobotSendUrl, data, "POST");
         }
         /// <summary>
+        /// 发送Link消息
+        /// </summary>
+        /// <param name="title">消息标题</param>
+        /// <param name="text">消息内容。如果太长只会部分展示</param>
+        /// <param name="messageUrl">点击消息跳转的URL</param>
+        /// <param name="picUrl">图片URL</param>
+        public static void OapiRobotLink(string title, string text, string messageUrl, string picUrl)
+        {
+            LinkModel lModel = new LinkModel();
+            lModel.link = new link();
+            lModel.msgtype = "link";
+            lModel.link.title = title;
+            lModel.link.text = text;
+            lModel.link.messageUrl = messageUrl;
+            lModel.link.picUrl = picUrl;
+
+            string data = JsonConvert.SerializeObject(lModel);
+            string json = Request(RobotSendUrl, data, "POST");
+        }
+        /// <summary>
         /// 发送markdown类消息
         /// </summary>
         /// <param name="title">标题</param>

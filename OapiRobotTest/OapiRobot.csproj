@@ -49,6 +49,7 @@
     <Compile Include="Model\ActionCardOverallModel.cs" />
     <Compile Include="Model\ActionCardSingleModel.cs" />
     <Compile Include="Model\FeedCardModel.cs" />
+    <Compile Include="Model\LinkModel.cs" />
     <Compile Include="Model\MarkDownModel.cs" />
     <Compile Include="Model\TextModel.cs" />
     <Compile Include="OapiRobot.cs" />
